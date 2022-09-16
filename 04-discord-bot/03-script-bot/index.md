@@ -13,9 +13,10 @@ Om straks het script te laten gebruiken door de bot hebben we de access token no
 
 * Ga naar www.discord.com/developer en log eventueel in. 
 * Kijk onder **Applications** en selecteer de bot die je in stap 1 hebt aangemaakt.
-* Bij het tabblad **Bot** kan je de token vinden. Onthou deze locatie want de token hebben we straks nodig. 
+* Bij het tabblad **Bot** kan je de token vinden. Hou deze tab open want de token hebben we straks nodig. (bij een reload is die weg!)
 
 ![](tokenlocation.png)
+
 
 ## Client script maken
 
