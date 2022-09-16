@@ -22,7 +22,8 @@ Om straks het script te laten gebruiken door de bot hebben we de access token no
 
 * Maak in Visual Studio een nieuwe Python file aan met de naam: `discord_bot.py`.
 * Importeer *discord.py*: `import discord`
-* Maak de 'client' aan. Dit is het object welke gaat communiceren met de Discord server. Je kan via dit object bij de discord API komen. Dat betekent dat je bij allemaal functies en andere objecten komen die te maken hebben met Discord. `client = discord.Client()`
+* Maak je intents aan, deze geven aan wat jou programma bij discord wil doen. plaats `intents = discord.Intents.default()` in je script en in de regel daaronder `intents.messages= True`
+* Maak de 'client' aan. Dit is het object welke gaat communiceren met de Discord server. Je kan via dit object bij de discord API komen. Dat betekent dat je bij allemaal functies en andere objecten komen die te maken hebben met Discord. `client = discord.Client(intents=intents)`
 * Hier ga je gebruik maken van de Token. Laat de Client verbinding maken met Discord: `client.run("<TOKEN>")`. Gebruik hier jouw eigen token in plaats van `<TOKEN>`.   
 Deze regel code moet pas uitgevoerd worden aan het einde van de code.
 * Sla dit bestand op.
@@ -50,7 +51,7 @@ Wordt gebruikt wanneer er een nieuwe member in de Guild/Server komt.
 ## Eerste event handler
 De eerste event handler die we gaan gebruiken is `on_ready`. Deze wordt aangeroepen wanneer de client helemaal gereed is en alles functioneel is. Als er dus iets nog niet helemaal goed is zal de functie niks doen.
 
-Zet deze functie code boven `client.run("<TOKEN>")`
+Zet deze functie code boven `client.run("<TOKEN>")`. Want de regels onder client.run worden niet uitgevoerd totdat de client stopt!
 
 > Dit is niet de beste of mooiste methode van het vinden van een guild want we pakken gewoon de eerste guild/server die we kunnen vinden. Later gaan we kijken naar betere methodes.
 
