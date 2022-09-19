@@ -10,6 +10,7 @@ Overzicht van onderwerpen Python Extra (voorlopig)
 2. [Lezen en schrijven van bestanden en mappen / Bestandssysteem](02-filesystem-io)
 3. [Afbeeldingen bewerken en Meme’s maken met Pillow](03-memes-gifs)
 4. [Discord bot maken en deze laten luisteren en reageren](04-discord-bot)
+5. [Extra - Discord bot haiku](05-discord-bot-haiku)
 
 ![](meme.jpg)
 
