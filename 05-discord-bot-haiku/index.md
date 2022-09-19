@@ -42,7 +42,7 @@ async def on_message(message):
     print(message.created_at,"is when the message was posted")
     print(message.channel,"is the channel this message was posted in")
 ```
-Maak hier nu een `if statement` waarbij je de message.content test op: `!haiku` en `message.author.bot == False`
+Maak hier nu een `if statement` waarbij je de `message.content` test op: `!haiku` AND `message.author.bot == False`
 
 Als dat zo is (True) roep dan de `haiku functie` aan:
 ```python
@@ -60,7 +60,17 @@ zet in haiku5.txt regels met 5 syllables
 zet in haiku7.txt regels met 7 syllables
 
 haal deze bijvoorbeeld uit:
-[Voorbeelden](https://examples.yourdictionary.com/examples-of-haiku-poems.html)
+>An old silent pond...
+>A frog jumps into the pond,
+>splash! Silence again.
+
+>Autumn moonlight-
+>a worm digs silently
+>into the chestnut.
+
+>In the twilight rain
+>these brilliant-hued hibiscus -
+>A lovely sunset.
 
 
 nu maken we `2 variablen` aan om de content van die files in op te slaan:
