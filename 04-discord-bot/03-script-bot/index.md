@@ -14,6 +14,9 @@ Om straks het script te laten gebruiken door de bot hebben we de access token no
 * Ga naar www.discord.com/developer en log eventueel in. 
 * Kijk onder **Applications** en selecteer de bot die je in stap 1 hebt aangemaakt.
 * Bij het tabblad **Bot** kan je de token vinden. Hou deze tab open want de token hebben we straks nodig. (bij een reload is die weg!)
+* Maak een nieuw tekst bestand op je harde schijf om de token in op te slaan `c:\geheim\discordbot.txt`
+* Plak je token in het bestand
+
 
 ![](tokenlocation.png)
 
@@ -24,7 +27,13 @@ Om straks het script te laten gebruiken door de bot hebben we de access token no
 * Importeer *discord.py*: `import discord`
 * Maak je intents aan, deze geven aan wat jou programma bij discord wil doen. plaats `intents = discord.Intents.default()` in je script en in de regel daaronder `intents.messages= True`
 * Maak de 'client' aan. Dit is het object welke gaat communiceren met de Discord server. Je kan via dit object bij de discord API komen. Dat betekent dat je bij allemaal functies en andere objecten komen die te maken hebben met Discord. `client = discord.Client(intents=intents)`
-* Hier ga je gebruik maken van de Token. Laat de Client verbinding maken met Discord: `client.run("<TOKEN>")`. Gebruik hier jouw eigen token in plaats van `<TOKEN>`.   
+* laad de token in een variable:
+
+```python
+bottoken=open("c:\geheim\discordbot.txt"", "r").readline()
+```
+
+* Hier ga je gebruik maken van de Token. Laat de Client verbinding maken met Discord: `client.run("<TOKEN>")`. Gebruik hier jouw eigen `bottoken` variable in plaats van `<TOKEN>`.   
 Deze regel code moet pas uitgevoerd worden aan het einde van de code.
 * Sla dit bestand op.
 
