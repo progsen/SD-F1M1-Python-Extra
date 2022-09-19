@@ -60,20 +60,20 @@ zet in haiku5.txt regels met 5 syllables
 zet in haiku7.txt regels met 7 syllables
 
 haal deze bijvoorbeeld uit:
->An old silent pond...
->A frog jumps into the pond,
->splash! Silence again.
+- An old silent pond...
+- A frog jumps into the pond,
+- splash! Silence again.
 
->Autumn moonlight-
->a worm digs silently
->into the chestnut.
+- Autumn moonlight-
+- a worm digs silently
+- into the chestnut.
 
->In the twilight rain
->these brilliant-hued hibiscus -
->A lovely sunset.
+- In the twilight rain
+- these brilliant-hued hibiscus -
+- A lovely sunset.
 
 
-nu maken we `2 variablen` aan om de content van die files in op te slaan:
+nu maken gaan we die files lezen en maken we `2 variablen` aan om de gelezen content in op te slaan:
 zet deze `boven aan` in je bot python file
 
 ```python
