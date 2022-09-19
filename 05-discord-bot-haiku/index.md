@@ -1,50 +1,113 @@
 ---
-title: Discord Bot maken
+title: Bot haikus laten maken
 ---
 
-## Map maken voor deze les
-* Maak eerste een nieuwe map aan **in je Flex-PythonExtra map**
-* Noem de map: **04-Discord**
-* In deze map zet je alle bestanden en code die je in deze les maakt.
+We hebben onze bot van vorige keer, nu gaan we een spelletje erbij maken
 
-![](new-folder.png)
+## haiku function
+In je bot file maak je een nieuwe function aan:
 
----
+```python
+async def haiku(channel):
+    await channel.send("Hier komt een haiku")
+```
+Deze hebben we straks nodig
 
-### Discord bots ? Wat zijn dat?
+channel komt straks uit je message
 
-Een Discord Bot is een computer gestuurde discord gebruiker/moderator/admin. Door middel van scripts kan een bot moderator of admin taken automatiseren maar een bot kan ook gebruikt worden voor spelletjes of als tools voor gebruikers. 
+## Message content mogen lezen:
 
----
+om bij de mesage content te mogen, moeten we dit aangeven.
+Voeg de `intents.message_content` toe:
 
-### Waarvoor worden bots gebruikt?
-Bots worden op discord servers voor heel veel dingen gebruikt
-Je hebt bots die
-- Rollen beheren
-- Letten op taalgebruik en mensen kicken die spammen en schelden.
-- De gebruikers spellen laten spelen
- - Bijvoorbeeld galgje
-- ... en nog meer. Jullie weten dit waarschijnlijk beter dan ik.
+```python
+intents.messages= True
+intents.message_content = True #deze is nieuw
+client = discord.Client(intents=intents)
+```
 
-> In deze flex les leer je hoe je een Discord bot kan maken.
+In je `discord developer portal` onder jouw app, moet je naar je bot gaan en `Message Content Intent` aanzetten:
 
-Wil je er meer over weten en je er verder in verdiepen, kijk dan eens op deze websites:
+![](content.PNG)
 
-- [Discord docs: Dev API](https://discord.com/developers/docs/intro){:target="blank"} (erg technisch)
-- [Discord.py documentatie](https://discordpy.readthedocs.io/en/stable/){:target="blank"} (ook redelijk technisch)
+## !haiku commando
+In je bot heb je een stuk code om op messages te reageren:
 
----
+```python
+@client.event
+async def on_message(message):
+    print(message.channel.name, "the message was posted from this channel")
+    print(message.content)
+    print(message.author,"is the user who wrote the message")
+    print(message.created_at,"is when the message was posted")
+    print(message.channel,"is the channel this message was posted in")
+```
+Maak hier nu een `if statement` waarbij je de message.content test op: `!haiku` en `message.author.bot == False`
 
-### Leerdoelen 
-- Ik kan een discord bot aan maken en toevoegen aan mijn server.
-- Ik kan een module via pip downloaden en gebruiken.
-- Ik kan een discord bot laten draaien op mijn computer.
-- Ik kan de bot berichten laten lezen en zelf berichten laten sturen.
+Als dat zo is (True) roep dan de `haiku functie` aan:
+```python
+haiku(message.channel)
+```
 
----
+## Haiku files inladen
 
-## Opdrachten / uitdagingen
+Maak nu 2 tekst files aan:
 
-[Start met het maken van een bot](01-bot-maken/){:class="next"}
+* haiku5.txt
+* haiku7.txt
+
+zet in haiku5.txt regels met 5 syllables
+zet in haiku7.txt regels met 7 syllables
+
+haal deze bijvoorbeeld uit:
+[Voorbeelden](https://examples.yourdictionary.com/examples-of-haiku-poems.html)
 
 
+nu maken we `2 variablen` aan om de content van die files in op te slaan:
+zet deze `boven aan` in je bot python file
+
+```python
+haiku5 = open("haiku5.txt", "r").readlines()
+haiku7 = open("haiku7.txt", "r").readlines()
+```
+
+## Haiku function uitbreiden:
+
+Nu moeten we nog wel de haiku kiezen en schrijven naar de chat.
+Voeg boven aan je file bij de imports `import random` toe en pas de haiku function aan:
+
+
+
+```python
+async def haiku(channel):
+    
+    line1 = random.choice(haiku5)
+    #hier de 2 anderen selecteren
+
+    await channel.send(line1)
+    #hier de 2 ook chatten
+```
+
+
+## Challenge:
+
+Maak nog twee extra commando's om de 2 verschillende haiku regels toe te voegen:
+* !haiku5 
+* !haiku7
+Hiervoor moet je dus wat de gebruiker typed bij de haiku5 of haiku7 lijst toevoegen met `append(...)`.
+bv:
+
+En misschien zelfs naar de files schrijven (maar dan moet je aan security gaan denken ^^)
+
+
+## Klaar! Je werk op Github zetten
+
+Zorg er voor dat je alles wat je hebt gemaakt commit en naar Github pusht, zodat duidelijk is wat je hebt gedaan en hoe ver je bent gekomen. Hier lees je hoe je dat doet.
+
+[Je werk *committen* en *pushen* naar Github](../../00-setup/commit_push.html){:class="next"}
+
+> Vergeet niet je token weg te halen
+
+> Dit was wel een flinke opdracht en best ingewikkeld. Dus neem je tijd om er aan te werken.
+ 
+> Vraag om hulp tijdens de Flex Python Extra lessen als je vastloopt! 
