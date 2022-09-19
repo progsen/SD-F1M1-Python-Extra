@@ -77,8 +77,14 @@ nu maken gaan we die files lezen en maken we `2 variablen` aan om de gelezen con
 zet deze `boven aan` in je bot python file
 
 ```python
-haiku5 = open("haiku5.txt", "r").readlines()
-haiku7 = open("haiku7.txt", "r").readlines()
+def readLines(file):
+    f = open(file, "r")
+    lines = f.readlines()
+    f.close()#deze is belangrijk weet jij waarom?
+    return lines
+
+haiku5 = readLines("haiku5.txt")
+haiku7 = readLines("haiku7.txt")
 ```
 
 ## Haiku function uitbreiden:
