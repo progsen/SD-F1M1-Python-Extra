@@ -13,5 +13,5 @@ De website is dan te zien op:
 [http://127.0.0.1:4000](http://127.0.0.1:4000)
 
 ----
-Na pushen van de master branch worden wijzigingen **automatisch** gepubliceerd op:
+Na pushen van de main branch worden wijzigingen **automatisch** gepubliceerd op:
 [https://hiddebraun-ma.github.io/SD-F1M1-Python-Extra/](https://hiddebraun-ma.github.io/SD-F1M1-Python-Extra/)

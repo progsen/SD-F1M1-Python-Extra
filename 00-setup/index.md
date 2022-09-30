@@ -70,12 +70,12 @@ Nu de map goed is gekoppeld kun je alle wijzigingen die je nog niet hebt, ophale
 Voer nu dit commando uit:
 
 ```bash
-git pull origin master
+git pull origin main
 ```
 
 ![](git_pull_origin_master.gif)
 
-Hiermee haal je de `master` branch op naar je computer (de `master` is de standaard branch in Git)
+Hiermee haal je de `main` branch op naar je computer (de `main` is de standaard branch in Git)
 
 **Als het goed is heb je nu het README.md bestand op je computer staan**
 
@@ -95,7 +95,7 @@ Nu kun je jouw wijzigingen **committen** en **pushen** naar Github.
 * Eerst kijk je met `git status` wat de wijzigingen zijn. 
 * Dan selecteer je alle wijzigingen met `git add .` 
 * Nu commit je alles: `git commit -m "README gewijzigd"`
-* Wijzigingen naar Github *pushen*: `git push -u origin master`
+* Wijzigingen naar Github *pushen*: `git push -u origin main`
 
 ![](git_commit_push.gif)
 
