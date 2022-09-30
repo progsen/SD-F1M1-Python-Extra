@@ -55,4 +55,9 @@ Kom je er niet uit vraag dan hulp aan de docent [Silvan Herrema](sip:s.herrema@m
 
 ## Aan de slag
 
+
+Als je de git & github les al gehad hebt begin je met:
 [Map en Github repository maken voor Python Extra](00-setup/index.md){:class="next"}
+
+Anders begin je met wat hieronder staat en sla je git stappen over (doe die later!)
+[Tekenen en animeren in Python met Turtle](01-turtle-graphics){:class="next"}

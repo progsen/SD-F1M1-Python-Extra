@@ -6,11 +6,17 @@ Vanaf de command line / terminal kun je de ingebouwde demo mode van Turtle start
 
 Probeer eerst onderstaand commando uit te voeren: 
 
+> windows
+```bash
+python -m turtledemo
+```
+
+> mac
 ```bash
 python3 -m turtledemo
 ```
 
-> Let op, afhankelijk van jouw systeem moet je mischien `python3` vervangen door `python` of `py`, onthoud dit goed!
+> Let op, afhankelijk van jouw systeem moet je mischien `python` vervangen door `python` of `py`, onthoud dit goed!
 
 Als het goed is zie je nu een venster openen. Kies nu bovenin bij het menu voor "examples" en kies één van de demo's. 
 
@@ -20,14 +26,26 @@ Druk dan op de **start knop** om de gekozen demo te starten. Probeer er daarna n
 
 **Sluit het venster**
 
+## Troubleshooting
+Als je meldingen krijgt als:
+> tkinter not installed
+> cannot find turtle
+
+dan is je python install misgegaan, installeer deze dan even overnieuw!
+
 ---
 
 ## Eén van de demo's starten
 
 Je kunt ook alleen één van de demo's starten:
 
+> windows
 ```bash
-python3 -m turtledemo.peace
+python -m turtledemo.peace
+```
+> mac
+```bash
+python3 -m turtledemo
 ```
 
 Probeer nu een van de andere demo's te starten van de command line. Gebruik de namen uit het *examples* menu in de Turtle demo.
