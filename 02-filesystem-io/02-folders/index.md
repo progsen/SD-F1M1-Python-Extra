@@ -3,7 +3,7 @@ title: Een nieuwe map maken
 ---
 
 Je gaat nu een nieuwe map aanmaken met Python. 
-Voeg deze code toe aan je script en voer het script uit (F5):
+Voeg deze code toe aan je script en voer het script uit (de play knop):
 
 ```python
 # Een nieuwe map maken met os.mkdir()
