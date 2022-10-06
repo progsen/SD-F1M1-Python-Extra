@@ -9,7 +9,7 @@ Je weet nu hoe je een Python bestand kunt maken en bewaren met de IDLE editor.
 
 ## Met Python code een tekstbestand schrijven
 
-- Maak in IDLE een nieuwe Python script met de naam: `maak_tekstfile.py`
+- Maak in visual studio code een nieuwe Python script met de naam: `maak_tekstfile.py`
 - Importeer helemaal boven in je script de `io` module (hint: bekijk de vorige scripts)
 
 Je kunt bestanden in een bepaalde *mode* openen: 

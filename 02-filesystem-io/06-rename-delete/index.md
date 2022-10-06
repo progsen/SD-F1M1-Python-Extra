@@ -13,7 +13,7 @@ Nu nog een bestand hernoemen of verwijderen.
 ## Bestand maken en het absolute pad samenstellen
 
 - Maak eerst een nieuw tekstbestand aan: `demobestand.txt`  
-- Maak nu in IDLE een nieuw Python script aan en sla het op als: `hernoem_bestand.py`
+- Maak nu in visual studio code een nieuw Python script aan en sla het op als: `hernoem_bestand.py`
 
 Zet daar het volgende in:
 

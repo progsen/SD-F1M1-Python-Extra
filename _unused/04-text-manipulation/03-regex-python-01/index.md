@@ -16,7 +16,7 @@ De flow is als volgt:
 - Gebruik een regular expression om dit patroon te matchen in de invoer van de gebruiker.
 - Als er geen match is met het patroon dan tonen we een foutmelding
 
-Open IDLE en maak een nieuw bestand in je map: `input_check.py`
+Open visual studio code en maak een nieuw bestand in je map: `input_check.py`
 
 ```python
 # Importeer de regular expression module

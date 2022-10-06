@@ -35,7 +35,7 @@ Maar we willen dit bestand **per regel** lezen.
 > Zo kun je voor elke naam straks een map maken!
 
 ---
-Maak een nieuw Python bestand in IDLE: `lees_per_regel.py`.
+Maak een nieuw Python bestand in visual studio code: `lees_per_regel.py`.
 
 Gebruik `readline()` om een tekstbestand per regel te lezen:
 

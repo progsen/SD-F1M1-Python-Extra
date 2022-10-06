@@ -24,7 +24,7 @@ In Python zelf wordt de naam **PIL** gebruikt voor deze package.
 ## Een afbeelding laden met Pillow
 Je gaat de `PIL.Image` module inladen om een afbeelding te tonen.
 
-* Open IDLE (of een simpele tekst editor zoals kladblok) en maak een Python file in je map: `bekijk_afbeelding.py`
+* Open visual studio code en maak een Python file in je map: `bekijk_afbeelding.py`
 * Importeer de Image module van Pillow: `from PIL import Image`  (zo importeer je alleen de `Image` module en niet alles) 
 * Zet een eigen PNG, JPG of GIF afbeelding in je map, **bij je Python file**. Zorg dat het een kleurenafbeelding is. 
 * Bij mij heet het bestand `sunset.jpg`
@@ -56,7 +56,7 @@ print("De afbeelding is " + str(breedte) + " pixels breed en " + str(hoogte) + "
 print(afbeelding.format, afbeelding.size, afbeelding.mode)
 ```
 
-> Voer het Python script elke keer uit met F5 of via de menu optie *Run > Module* (F5) van IDLE
+> Voer het Python script elke keer uit met de play knop van visual studio code
 
 ![Run module](run-module.png)
 
@@ -72,7 +72,7 @@ Meer weten over wat je allemaal kunt doen met de `Image` module van Pillow? [Kij
 Je gaat nu de afbeelding de helft kleiner maken. Daarna sla je de afbeelding op onder een nieuwe naam. 
 
 * Maak een kopie van je `bekijk_afbeelding.py` script en noem het bestand: `bewerk_afbeelding.py`
-* Open dit bestand in IDLE
+* Open dit bestand in visual studio code
 * Haal alle `print` regels weg, maar houdt de `hoog` en `breed` variabelen in je script.
 
 De afbeelding moet de helft kleiner worden. Maak twee nieuwe variabelen `helft_breedte` en `helf_hoogte`.
