@@ -43,7 +43,7 @@ lettertype = ImageFont.truetype("<lettertype bestand>", <lettergrootte>)
 
 * Voeg bovenstaande code toe aan je script. 
 * Vervang `<lettertype bestand>` met de bestandsnaam van het lettertype.
-* Vervang `<lettergrootte>` met de gewenste lettergrootte, bijvoorbeeld: 40
+* Vervang `<lettergrootte>` met de gewenste lettergrootte, bijvoorbeeld: 40 `Let op dit is een nummer geen string, dus niet "40" maar 40`.
 
 > Probeer het script uit te voeren. Als het goed is, krijg je nu geen foutmeldingen. Het klopt dat je nog niets ziet.
 

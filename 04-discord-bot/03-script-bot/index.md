@@ -30,10 +30,10 @@ Om straks het script te laten gebruiken door de bot hebben we de access token no
 * laad de token in een variable:
 
 ```python
-bottoken=open("c:\geheim\discordbot.txt"", "r").readline()
+bottoken=open("c:/geheim/discordbot.txt", "r").readline()
 ```
 
-* Hier ga je gebruik maken van de Token. Laat de Client verbinding maken met Discord: `client.run("<TOKEN>")`. Gebruik hier jouw eigen `bottoken` variable in plaats van `<TOKEN>`.   
+* Hier ga je gebruik maken van de Token. Laat de Client verbinding maken met Discord: `client.run(TOKEN)`. Gebruik hier jouw eigen `bottoken` variable in plaats van `TOKEN`.   
 Deze regel code moet pas uitgevoerd worden aan het einde van de code.
 * Sla dit bestand op.
 
