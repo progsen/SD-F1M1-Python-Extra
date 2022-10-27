@@ -25,7 +25,7 @@ Als je de bot wilt laten reageren op berichten, bijvoorbeeld 'Hallo' zeggen tege
 Beide dingen weten we. De bot roept de `on_message` functie aan iedere keer als er iets gezegd wordt. Wanneer de functie wordt aangeroepen krijg je ook mee in welk kanaal er iets gezegd wordt.
 Voeg deze regel code maar toe aan de functie:
 ```python
-await message.channel.send("Hello " + message.author)
+await message.channel.send("Hello " + str(message.author))
 ```
 
 >tip: Je kan je client sluiten door op Control+C te drukken.
