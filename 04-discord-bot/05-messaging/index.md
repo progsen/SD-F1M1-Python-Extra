@@ -6,7 +6,10 @@ Tot nu toe heb je de client verbinding laten maken met de server en heb je de cl
 
 ```python
 import discord
-client = discord.Client()
+
+intents = discord.Intents.default()
+intents.messages= True
+client = discord.Client(intents=intents)
 
 @client.event
 async def on_ready():
